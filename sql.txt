@@ -1,0 +1,13 @@
+-- Cria o banco de dados chamado 'leads'
+CREATE DATABASE leads;
+
+-- Seleciona o banco de dados 'leads' para uso
+USE leads;
+
+-- Cria a tabela 'EMAIL' com os campos especificados
+CREATE TABLE IF NOT EXISTS EMAIL (
+    id INT AUTO_INCREMENT PRIMARY KEY,    -- Identificador único e auto-incremento
+    nome VARCHAR(100) NOT NULL,           -- Nome do contato, não pode ser nulo
+    email VARCHAR(100) NOT NULL,          -- Endereço de e-mail, não pode ser nulo
+    telefone VARCHAR(15) NOT NULL
+    );
